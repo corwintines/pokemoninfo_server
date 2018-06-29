@@ -1,0 +1,28 @@
+{
+  "name": "pokemoninfo_server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Server developed for git plays pokemon client project to store and interact with the pokemon data.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "author": "Corwin Smith",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.1.1",
+    "npm": "^6.0.0",
+    "supertest": "^3.1.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "knex": "^0.14.6",
+    "lodash": "^4.17.4",
+    "pg": "^7.4.3",
+    "querystring": "^0.2.0",
+    "rand-token": "^0.4.0",
+    "request": "^2.83.0"
+  }
+}
