@@ -5,9 +5,13 @@ const cors = require('cors');
 
 const app = express();
 
+const pokemon_routing = require('./api/pokemon');
+
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
+
+app.use('/api/v1/pokemon', pokemon_routing);
 
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
