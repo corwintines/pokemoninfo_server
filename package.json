@@ -5,7 +5,7 @@
   "description": "Server developed for git plays pokemon client project to store and interact with the pokemon data.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon app.js"
+    "dev": "nodemon bin/server.js"
   },
   "author": "Corwin Smith",
   "license": "ISC",

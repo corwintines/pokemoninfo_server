@@ -1,7 +1,7 @@
-import express from 'experss'
-import bodyParser from 'body-parser'
-import cors from 'cors'
-import pokemon_routing from './api/pokemon'
+const express = require('express')
+const bodyParser = require('body-parser')
+const cors = require('cors')
+const pokemon_routing = require('./api/pokemon')
 
 const app = express();
 
