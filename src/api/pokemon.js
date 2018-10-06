@@ -1,9 +1,7 @@
 const express = require('express');
-const router = express.Router();
-
-const queries = require('../db/queries');
-
 const controller_director = require('../controllers/controller');
+
+const router = express.Router();
 
 router.get('/:table', function(req, res) {
   var table = req.params.table;
@@ -29,7 +27,6 @@ router.get('/:table/:attr/:val', function(req, res) {
   var controller = controller_director[table];
 
   controller.readSpecific({table, attr, val}).then(table_data => {
-    console.log(table_data);
     table_data ? res.send(table_data) : res.json("Error");
   });
 });

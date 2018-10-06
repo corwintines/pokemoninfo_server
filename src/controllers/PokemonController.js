@@ -1,4 +1,4 @@
-var queries = require("../db/queries");
+const queries = require("../db/queries");
 
 module.exports = {
   readAll: function(table) {
